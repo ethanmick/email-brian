@@ -1,7 +1,3 @@
-
-
-console.log('what the fuck iiiii')
-
 function findEmails(str) {
 
   if (!str) {
@@ -21,20 +17,14 @@ function findEmails(str) {
 }
 
 window.onload = function() {
+  var findEmailButton = document.getElementById('find')
 
-  console.log('test11')
-var findEmailButton = document.getElementById('find')
-
-//add event listener
-findEmailButton.addEventListener('click', function(event) {
-  console.log('test')
-  var raw = document.getElementById('raw').value
-  var emails = findEmails(raw)
-  document.getElementById('emails').value = emails.join(',')
-});
+  //add event listener
+  findEmailButton.addEventListener('click', function(event) {
+    var raw = document.getElementById('raw').value
+    var emails = findEmails(raw)
+    document.getElementById('emails').value = emails.join(',')
+  });
 
 }
 
-
-console.log('what the fuck')
-  
