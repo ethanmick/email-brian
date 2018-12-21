@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <title>Parse Emails</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
   </head>
   <body>
-    <textarea id="raw"></textarea>
-    <button id="find">Find Emails</button>
-    <textarea readonly id="emails"></textarea>
+    <div class="container mx-auto flex-col text-center">
+      <h1 class="p-2">Parse Emails</h1>
+      <textarea id="raw" tabIndex=1 autofocus class="w-full border border-grey rounded"></textarea>
+      <button id="find" tabIndex=2 class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded m-4">
+        Find Emails
+      </button>
+      <textarea readonly tabIndex=3 id="emails" class="w-full border border-grey rounded"></textarea>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
